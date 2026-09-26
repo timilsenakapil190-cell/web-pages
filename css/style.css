@@ -9,15 +9,17 @@
 }
 
 :root {
-  --color-primary: #111111;
-  --color-accent: #c2663f;
-  --color-accent-dark: #9e5230;
-  --color-bg: #f6f3ef;
-  --color-surface: #ffffff;
-  --color-text: #1c1c1c;
-  --color-text-muted: #7c756d;
-  --color-border: #e2ddd8;
-  --color-rule: #d4cfc8;
+  --color-primary: #102A43;
+  --color-secondary: #245B7A;
+  --color-accent: #4FA3D1;
+  --color-highlight: #D6A85F;
+  --color-bg: #F7F8F5;
+  --color-surface: #E8F0F4;
+  --color-text: #243746;
+  --color-text-muted: #6B7C8C;
+  --color-border: #D5E0E6;
+  --color-footer: #102A43;
+  --color-footer-text: #F7F8F5;
   --font-display: 'Fraunces', serif;
   --font-body: 'Inter', sans-serif;
   --space-xs: 4px;
@@ -96,25 +98,27 @@ section {
 }
 
 .btn-primary {
-  background-color: var(--color-accent);
-  color: var(--color-surface);
-  border-color: var(--color-accent);
+  background-color: var(--color-secondary);
+  color: var(--color-footer-text);
+  border-color: var(--color-secondary);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-accent-dark);
-  border-color: var(--color-accent-dark);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
   transform: translateY(-1px);
 }
 
 .btn-outline {
   background-color: transparent;
   color: var(--color-primary);
-  border-color: var(--color-border);
+  border-color: var(--color-primary);
 }
 
 .btn-outline:hover {
-  border-color: var(--color-text-muted);
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  border-color: var(--color-accent);
   transform: translateY(-1px);
 }
 
@@ -143,7 +147,7 @@ section {
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .nav-links a::after {
@@ -175,7 +179,7 @@ section {
   display: block;
   width: 22px;
   height: 2px;
-  background-color: var(--color-primary);
+  background-color: var(--color-text);
   border-radius: 2px;
   transition: all 200ms ease;
 }
@@ -209,7 +213,7 @@ section {
 .divider {
   width: 48px;
   height: 1px;
-  background-color: var(--color-rule);
+  background-color: var(--color-border);
   margin: var(--space-xl) auto;
 }
 
