@@ -1,6 +1,6 @@
 .about {
   background-color: transparent;
-  background-image: url('../images/stu.jpg');
+  background-image: url("../images/stu.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,7 +45,9 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
   animation: image-entrance 1s ease-out forwards;
-  transition: box-shadow 400ms ease, border-color 400ms ease;
+  transition:
+    box-shadow 400ms ease,
+    border-color 400ms ease;
 }
 
 .about-image-wrapper:hover {
@@ -64,33 +66,6 @@
   display: flex;
   gap: var(--space-sm);
   margin-top: var(--space-lg);
-}
-
-.about-visual .stat-card {
-  flex: 1;
-  padding: var(--space-sm) var(--space-md);
-  background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(16px) saturate(1.4);
-  -webkit-backdrop-filter: blur(16px) saturate(1.4);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
-.about-visual .stat-card .stat-number {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-accent);
-  line-height: 1.2;
-}
-
-.about-visual .stat-card .stat-label {
-  font-size: 0.75rem;
-  color: rgba(240, 240, 240, 0.7);
-  margin-top: 2px;
-  font-weight: 400;
-  font-family: var(--font-body);
 }
 
 .about-text h3 {

@@ -1,5 +1,10 @@
 .hero {
-  background: linear-gradient(165deg, var(--color-bg) 0%, var(--color-surface) 50%, var(--color-bg) 100%);
+  background: linear-gradient(
+    165deg,
+    var(--color-bg) 0%,
+    var(--color-surface) 50%,
+    var(--color-bg) 100%
+  );
   z-index: 1;
   padding: 140px 0 80px;
   position: relative;
@@ -8,9 +13,13 @@
 }
 
 .hero::before {
-  content: '';
+  content: "";
   pointer-events: none;
-  background: radial-gradient(circle, rgba(14, 165, 233, 0.06) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(14, 165, 233, 0.06) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   width: 600px;
   height: 600px;
@@ -20,9 +29,13 @@
 }
 
 .hero::after {
-  content: '';
+  content: "";
   pointer-events: none;
-  background: radial-gradient(circle, rgba(14, 165, 233, 0.04) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(14, 165, 233, 0.04) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   width: 400px;
   height: 400px;
@@ -90,29 +103,31 @@
 }
 
 .hero-text h1 {
-  font-family: var(--font-display);
+  font-family:
+    Helvetica Neue,
+    sans-serif;
   letter-spacing: -0.035em;
   font-size: clamp(2.75rem, 6vw, 4.25rem);
   font-weight: 700;
   line-height: 1.04;
   margin-bottom: var(--space-xl);
-  color: var(--color-text);
-  text-shadow: 0 0 40px rgba(14, 165, 233, 0.15);
+  color: #000000;
+  text-shadow: 0 0 40px rgba(218, 233, 83, 0.15);
 }
 
 .hero-text h1 .highlight {
-  color: var(--color-accent);
-  font-weight: 700;
-  font-style: italic;
-  text-shadow: 0 0 30px rgba(14, 165, 233, 0.2);
+  color: #e00505d2;
+  font-weight: 760px;
+  font-style: oblique;
+  text-shadow: 0 0 30px rgba(243, 197, 33, 0.2);
 }
 
 .hero-text p {
-  color: var(--color-text-muted);
+  color: #a73c8c;
   max-width: 500px;
   font-size: clamp(1rem, 1.5vw, 1.1rem);
   line-height: 1.8;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: 15px;
   font-weight: 400;
 }
 
