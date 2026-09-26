@@ -5,6 +5,7 @@
   justify-content: center;
   position: relative;
   padding-top: var(--nav-height);
+  background-color: var(--color-bg);
 }
 
 .hero-content {
