@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600;700&family=Inter:wght@300;400;500&display=swap');
 
 *,
 *::before,
@@ -9,17 +9,16 @@
 }
 
 :root {
-  --color-primary: #102A43;
-  --color-secondary: #245B7A;
-  --color-accent: #4FA3D1;
-  --color-highlight: #D6A85F;
-  --color-bg: #F7F8F5;
-  --color-surface: #E8F0F4;
-  --color-text: #243746;
-  --color-text-muted: #6B7C8C;
-  --color-border: #D5E0E6;
-  --color-footer: #102A43;
-  --color-footer-text: #F7F8F5;
+  --color-text: #171717;
+  --color-text-muted: #66635D;
+  --color-accent: #C85A3F;
+  --color-secondary: #5C6548;
+  --color-highlight: #C85A3F;
+  --color-bg: #F5F2EA;
+  --color-surface: #EAE5D8;
+  --color-border: #D5D0C4;
+  --color-footer: #171717;
+  --color-footer-text: #F5F2EA;
   --font-display: 'Fraunces', serif;
   --font-body: 'Inter', sans-serif;
   --space-xs: 4px;
@@ -30,7 +29,7 @@
   --space-2xl: 48px;
   --space-3xl: 64px;
   --space-4xl: 80px;
-  --max-width: 1120px;
+  --max-width: 1160px;
   --nav-height: 64px;
 }
 
@@ -50,7 +49,7 @@ body {
   font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-text);
-  line-height: 1.7;
+  line-height: 1.75;
   font-size: 16px;
   font-weight: 400;
 }
@@ -70,55 +69,41 @@ section {
   padding: var(--space-4xl) 0;
 }
 
-.section-title {
-  font-family: var(--font-display);
-  font-size: 2.25rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: var(--space-2xl);
-  color: var(--color-primary);
-  line-height: 1.2;
-}
-
 /* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 32px;
-  border-radius: 6px;
+  padding: 14px 30px;
+  border-radius: 4px;
   font-family: var(--font-body);
   font-size: 0.9375rem;
   font-weight: 500;
   letter-spacing: 0.01em;
   cursor: pointer;
-  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease, transform 150ms ease;
-  border: 1.5px solid transparent;
+  transition: background-color 200ms ease, color 200ms ease, transform 150ms ease;
+  border: none;
   line-height: 1.4;
 }
 
 .btn-primary {
-  background-color: var(--color-secondary);
+  background-color: var(--color-accent);
   color: var(--color-footer-text);
-  border-color: var(--color-secondary);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
+  background-color: #a84a32;
   transform: translateY(-1px);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: var(--color-text);
+  border: 1.5px solid var(--color-border);
 }
 
 .btn-outline:hover {
-  background-color: var(--color-accent);
-  color: var(--color-text);
-  border-color: var(--color-accent);
+  border-color: var(--color-text);
   transform: translateY(-1px);
 }
 
@@ -139,7 +124,7 @@ section {
 .nav-links a {
   font-family: var(--font-body);
   font-size: 0.9375rem;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-text-muted);
   transition: color 200ms ease;
   position: relative;
@@ -147,7 +132,7 @@ section {
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 .nav-links a::after {
@@ -156,7 +141,7 @@ section {
   bottom: -4px;
   left: 0;
   width: 0;
-  height: 1.5px;
+  height: 1px;
   background-color: var(--color-accent);
   transition: width 250ms ease;
 }
@@ -180,7 +165,7 @@ section {
   width: 22px;
   height: 2px;
   background-color: var(--color-text);
-  border-radius: 2px;
+  border-radius: 1px;
   transition: all 200ms ease;
 }
 
@@ -211,16 +196,13 @@ section {
 }
 
 .divider {
-  width: 48px;
+  width: 40px;
   height: 1px;
   background-color: var(--color-border);
-  margin: var(--space-xl) auto;
+  margin: var(--space-xl) 0;
 }
 
 @media (max-width: 768px) {
-  .section-title {
-    font-size: 1.75rem;
-  }
   section {
     padding: var(--space-3xl) 0;
   }
