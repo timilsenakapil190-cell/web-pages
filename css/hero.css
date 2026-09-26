@@ -5,7 +5,7 @@
   justify-content: flex-end;
   position: relative;
   padding-top: var(--nav-height);
-  padding-left: calc(var(--space-4xl) + 40px);
+  padding-left: calc(var(--space-5xl) + 50px);
   background-color: var(--color-bg);
 }
 
@@ -13,35 +13,52 @@
   content: '';
   position: absolute;
   top: 0;
-  left: calc(var(--space-4xl) + 40px);
-  width: 40px;
+  left: calc(var(--space-5xl) + 50px);
+  width: 3px;
   height: 100%;
   background-color: var(--color-accent);
-  opacity: 0.08;
+  opacity: 0.12;
+  border-radius: 2px;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-border);
+  opacity: 0.4;
 }
 
 .hero-content {
   text-align: left;
-  max-width: 580px;
-  padding: var(--space-3xl) 0;
+  max-width: 600px;
+  padding: var(--space-5xl) 0;
+  position: relative;
 }
 
 .hero-badge {
-  display: inline-block;
-  padding: var(--space-xs) var(--space-sm);
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-xs) var(--space-md);
   font-size: 0.75rem;
   font-weight: 500;
   font-family: var(--font-body);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-text-muted);
-  margin-bottom: var(--space-lg);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  margin-bottom: var(--space-xl);
 }
 
 .hero-badge::before {
   content: '';
   display: inline-block;
-  width: 20px;
+  width: 16px;
   height: 1px;
   background-color: var(--color-accent);
   vertical-align: middle;
@@ -50,25 +67,27 @@
 
 .hero h1 {
   font-family: var(--font-display);
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 1.12;
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 1.08;
   margin-bottom: var(--space-xl);
   color: var(--color-text);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
 }
 
 .hero h1 .highlight {
   color: var(--color-accent);
   font-style: italic;
+  font-weight: 700;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   color: var(--color-text-muted);
   margin-bottom: var(--space-2xl);
-  max-width: 480px;
-  line-height: 1.75;
+  max-width: 500px;
+  line-height: 1.8;
+  font-weight: 300;
 }
 
 .hero-buttons {
@@ -89,8 +108,11 @@
   .hero::before {
     display: none;
   }
+  .hero::after {
+    display: none;
+  }
   .hero h1 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
   .hero p {
     font-size: 1rem;

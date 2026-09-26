@@ -5,7 +5,7 @@
 
 .about .container {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.15fr 1fr;
   gap: var(--space-3xl);
   align-items: start;
 }
@@ -18,9 +18,10 @@
 .about-image-wrapper {
   width: 100%;
   aspect-ratio: 4 / 5;
-  border-radius: 4px;
+  border-radius: 6px;
   overflow: hidden;
   background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
 }
 
 .about-image-wrapper img {
@@ -40,12 +41,13 @@
   flex: 1;
   padding: var(--space-sm) var(--space-md);
   background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
   border-radius: 4px;
 }
 
 .about-visual .stat-card .stat-number {
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-accent);
   line-height: 1.2;
@@ -55,22 +57,25 @@
   font-size: 0.75rem;
   color: var(--color-text-muted);
   margin-top: 2px;
+  font-weight: 400;
 }
 
 .about-text h3 {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: var(--space-lg);
   color: var(--color-text);
-  line-height: 1.25;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .about-text > p {
   color: var(--color-text-muted);
   margin-bottom: var(--space-md);
   font-size: 1rem;
-  line-height: 1.8;
+  line-height: 1.85;
+  font-weight: 300;
 }
 
 .about-stats {
@@ -89,7 +94,7 @@
 
 .stat-item .number {
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-text);
   line-height: 1.2;
@@ -110,18 +115,21 @@
 }
 
 .skill-tag {
-  padding: 6px 12px;
-  border-radius: 3px;
+  padding: 7px 14px;
+  border-radius: 4px;
   background-color: var(--color-bg);
   color: var(--color-text-muted);
   font-size: 0.8rem;
-  font-weight: 400;
-  transition: color 200ms ease, background-color 200ms ease;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease;
+  border: 1px solid transparent;
 }
 
 .skill-tag:hover {
   color: var(--color-accent);
   background-color: rgba(200, 90, 63, 0.06);
+  border-color: rgba(200, 90, 63, 0.15);
 }
 
 @media (max-width: 768px) {
@@ -135,5 +143,8 @@
   .about-stats {
     flex-direction: column;
     gap: var(--space-md);
+  }
+  .about-text h3 {
+    font-size: 1.75rem;
   }
 }

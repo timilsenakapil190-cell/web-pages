@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--color-footer);
-  padding: var(--space-3xl) 0 var(--space-xl);
+  padding: var(--space-4xl) 0 var(--space-xl);
 }
 
 .footer-content {
@@ -16,19 +16,19 @@
   margin-bottom: var(--space-md);
   color: var(--color-footer-text);
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 
 .footer-section p {
-  color: rgba(245, 242, 234, 0.6);
+  color: rgba(240, 240, 240, 0.6);
   font-size: 0.9rem;
   margin-bottom: var(--space-sm);
-  line-height: 1.65;
+  line-height: 1.7;
   font-weight: 300;
 }
 
 .footer-section a {
-  color: rgba(245, 242, 234, 0.6);
+  color: rgba(240, 240, 240, 0.6);
   font-size: 0.9rem;
   margin-bottom: var(--space-sm);
   display: block;
@@ -52,32 +52,35 @@
 }
 
 .footer-social a {
-  width: 34px;
-  height: 34px;
-  border-radius: 4px;
-  background-color: rgba(245, 242, 234, 0.08);
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: rgba(240, 240, 240, 0.08);
+  border: 1px solid rgba(240, 240, 240, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(245, 242, 234, 0.5);
+  color: rgba(240, 240, 240, 0.5);
   font-size: 0.85rem;
-  transition: all 200ms ease;
+  transition: all 250ms ease;
   margin-bottom: 0;
 }
 
 .footer-social a:hover {
-  background-color: rgba(245, 242, 234, 0.15);
+  background-color: rgba(240, 240, 240, 0.16);
+  border-color: rgba(240, 240, 240, 0.2);
   color: var(--color-accent);
+  transform: translateY(-2px);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(245, 242, 234, 0.08);
+  border-top: 1px solid rgba(240, 240, 240, 0.08);
   padding-top: var(--space-lg);
   text-align: center;
 }
 
 .footer-bottom p {
-  color: rgba(245, 242, 234, 0.35);
+  color: rgba(240, 240, 240, 0.35);
   font-size: 0.8rem;
   margin: 0;
   font-weight: 300;
