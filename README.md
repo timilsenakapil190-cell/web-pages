@@ -1,4 +1,4 @@
-# Portfolio Website | Timilsen A Kapil
+# Timilsena Kapil
 
 A simple, clean, and responsive portfolio website built with **HTML**, **CSS**, and **JavaScript**.
 
